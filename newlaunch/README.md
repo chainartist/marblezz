@@ -15,10 +15,7 @@ A static demo web app that visualizes a Pump.fun livestream companion game: chat
 - Option 1: Open `index.html` directly in your browser
 - Option 2: Serve locally for best results
 
-```bash
-cd /Users/adnankabakbjy/Desktop/newlaunch
-python3 -m http.server 5173
-```
+
 Then visit `http://localhost:5173`.
 
 ## Notes
