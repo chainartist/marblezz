@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e1522"/>
+      <stop offset="1" stop-color="#0b1018"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="420" rx="16" fill="url(#g)"/>
+  <g opacity="0.9">
+    <rect x="60" y="60" width="520" height="40" rx="10" fill="#1b2231" stroke="rgba(255,255,255,0.1)"/>
+    <circle cx="86" cy="80" r="10" fill="#7c5cff"/>
+    <text x="106" y="85" fill="#e6f0ff" font-family="Inter, Arial" font-size="16" font-weight="700">pumpmaxi42</text>
+    <text x="240" y="85" fill="#dce7ff" font-family="Inter, Arial" font-size="16">!join 0.010</text>
+
+    <rect x="60" y="112" width="520" height="40" rx="10" fill="#172033" stroke="rgba(255,255,255,0.1)"/>
+    <circle cx="86" cy="132" r="10" fill="#1ec8ff"/>
+    <text x="106" y="137" fill="#e6f0ff" font-family="Inter, Arial" font-size="16" font-weight="700">degen88</text>
+    <text x="240" y="137" fill="#dce7ff" font-family="Inter, Arial" font-size="16">gm</text>
+
+    <rect x="60" y="164" width="520" height="40" rx="10" fill="#1b2231" stroke="rgba(255,255,255,0.1)"/>
+    <circle cx="86" cy="184" r="10" fill="#21d07a"/>
+    <text x="106" y="189" fill="#e6f0ff" font-family="Inter, Arial" font-size="16" font-weight="700">charlie7</text>
+    <text x="240" y="189" fill="#dce7ff" font-family="Inter, Arial" font-size="16">!join 0.020</text>
+  </g>
+  <text x="60" y="240" fill="#a5b1c2" font-family="Inter, Arial" font-size="14">Chat commands like !join 0.01 let viewers enter the race</text>
+</svg>
+
+

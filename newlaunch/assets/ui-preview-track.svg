@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e1522"/>
+      <stop offset="1" stop-color="#0b1018"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="420" rx="16" fill="url(#bg)"/>
+  <g opacity="0.9">
+    <rect x="60" y="60" width="840" height="300" rx="12" fill="#101724" stroke="rgba(255,255,255,0.1)"/>
+    <g stroke="rgba(255,255,255,0.12)" stroke-width="2">
+      <line x1="100" y1="90" x2="860" y2="90"/>
+      <line x1="100" y1="120" x2="860" y2="120"/>
+      <line x1="100" y1="150" x2="860" y2="150"/>
+      <line x1="100" y1="180" x2="860" y2="180"/>
+      <line x1="100" y1="210" x2="860" y2="210"/>
+      <line x1="100" y1="240" x2="860" y2="240"/>
+      <line x1="100" y1="270" x2="860" y2="270"/>
+      <line x1="100" y1="300" x2="860" y2="300"/>
+      <line x1="100" y1="330" x2="860" y2="330"/>
+    </g>
+    <g stroke-dasharray="6 6" stroke-width="3">
+      <line x1="120" y1="90" x2="120" y2="330" stroke="#7c5cff"/>
+      <line x1="820" y1="90" x2="820" y2="330" stroke="#1ec8ff"/>
+    </g>
+    <g>
+      <circle cx="140" cy="105" r="12" fill="#7c5cff"/>
+      <text x="140" y="88" fill="#e6f0ff" font-family="Inter, Arial" font-size="12" text-anchor="middle">pumpmaxi</text>
+      <circle cx="170" cy="165" r="16" fill="#21d07a"/>
+      <text x="170" y="148" fill="#e6f0ff" font-family="Inter, Arial" font-size="12" text-anchor="middle">charlie</text>
+      <circle cx="200" cy="225" r="10" fill="#1ec8ff"/>
+      <text x="200" y="208" fill="#e6f0ff" font-family="Inter, Arial" font-size="12" text-anchor="middle">echo</text>
+      <circle cx="230" cy="285" r="14" fill="#ffbe0b"/>
+      <text x="230" y="268" fill="#0a0d12" font-family="Inter, Arial" font-size="12" text-anchor="middle">nova</text>
+    </g>
+  </g>
+  <text x="60" y="392" fill="#a5b1c2" font-family="Inter, Arial" font-size="14">Marbles compete across lanes from start (purple) to finish (cyan)</text>
+</svg>
+
+

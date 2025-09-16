@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Marblez — Chat-Controlled Races</title>
+    <meta name="description" content="Interactive marblez races controlled by Pump.fun livestream chat. Viewers join by betting to enter the race. Phantom wallet connect supported." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="assets/ui-preview-track.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="brand">
+        <img class="logo" src="assets/ui-preview-track.svg" alt="Logo" />
+        <div class="brand-text">
+          <strong>BETA</strong>
+          <span>Marblez</span>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#livestream">Livestream</a>
+        <a href="#race">Race</a>
+        <a href="#leaderboard">Leaderboard</a>
+        <a href="#how-to-play">How to Play</a>
+      </nav>
+      <div class="wallet-controls">
+        <button id="connectWalletButton" class="button primary">Connect Wallet</button>
+        <span id="walletStatus" class="wallet-status">Not connected</span>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <section id="livestream" class="pane two-col">
+        <div class="video-pane card">
+          <div class="video-header">
+            <span class="badge live">LIVE</span>
+            <span class="title">Pump.fun Stream (mock)</span>
+          </div>
+          <div class="video-mock">
+            <img src="assets/ui-preview-track.svg" alt="Mock Livestream" />
+            <div class="overlay-text">Livestream preview</div>
+          </div>
+          <div class="video-footer">
+            <button id="connectChatButton" class="button">Connect Chat (mock)</button>
+            <label class="toggle">
+              <input id="simulateChatToggle" type="checkbox" checked />
+              <span>Simulate chat</span>
+            </label>
+          </div>
+        </div>
+
+        <aside class="chat-pane card">
+          <div class="chat-header">
+            <span>Chat</span>
+            <span class="hint">Type: !join 0.01</span>
+          </div>
+          <div id="chatMessages" class="chat-messages"></div>
+          <div class="chat-input">
+            <input id="chatInput" type="text" placeholder="Send a mock message (e.g. !join 0.01)" />
+            <button id="sendChatButton" class="button">Send</button>
+          </div>
+        </aside>
+      </section>
+
+      <section id="race" class="pane race-pane card">
+        <div class="race-topbar">
+          <div class="race-info">
+            <span class="label">Race</span>
+            <span id="raceStatus" class="status">Waiting for players...</span>
+          </div>
+          <div class="race-actions">
+            <button id="startRaceButton" class="button primary">Start Race</button>
+          </div>
+        </div>
+        <div class="race-main">
+          <div class="race-canvas-wrap">
+            <canvas id="raceCanvas" width="960" height="420"></canvas>
+          </div>
+          <div class="race-sidebar">
+            <div class="pot card-subtle">
+              <div class="pot-row">
+                <span>Total Pot</span>
+                <strong id="potTotal">0.00 SOL</strong>
+              </div>
+              <div class="pot-row">
+                <span>Players</span>
+                <strong id="playersCount">0</strong>
+              </div>
+            </div>
+            <div class="join card-subtle">
+              <label for="joinBetInput">Bet to join</label>
+              <div class="join-row">
+                <input id="joinBetInput" type="number" min="0" step="0.001" value="0.01" />
+                <button id="joinRaceButton" class="button">Join</button>
+              </div>
+              <p class="help">Or type <strong>!join 0.01</strong> in chat</p>
+            </div>
+            <div id="leaderboard" class="leaderboard card-subtle">
+              <div class="leaderboard-header">Leaderboard (last race)</div>
+              <ol id="leaderboardList" class="leaderboard-list"></ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pane previews">
+        <div class="preview-card card-subtle">
+          <img src="assets/ui-preview-chat.svg" alt="Chat Preview" />
+          <div class="caption">Chat commands join races and place bets</div>
+        </div>
+        <div class="preview-card card-subtle">
+          <img src="assets/ui-preview-track.svg" alt="Track Preview" />
+          <div class="caption">Marblez speed along a playful track</div>
+        </div>
+        <div class="preview-card card-subtle">
+          <img src="assets/ui-preview-scoreboard.svg" alt="Scoreboard Preview" />
+          <div class="caption">Leaderboard and pot totals update live</div>
+        </div>
+      </section>
+
+      <section id="how-to-play" class="pane howto card">
+        <div class="howto-header">How to Play</div>
+        <ol class="howto-list">
+          <li><strong>Connect Wallet</strong>: click <em>Connect Wallet</em> (Phantom supported).</li>
+          <li><strong>Connect Chat</strong>: press <em>Connect Chat</em> or leave <em>Simulate chat</em> on.</li>
+          <li><strong>Join the Race</strong>: type <code>!join 0.01</code> in chat or use the Join panel.</li>
+          <li><strong>Start</strong>: hit <em>Start Race</em>. Bots will fill in if needed.</li>
+          <li><strong>Watch & Win</strong>: marbles speed to the finish; see winners on the leaderboard.</li>
+        </ol>
+        <div class="tips">
+          <span class="tip">Tip: Bigger bets slightly increase marble size.</span>
+          <span class="tip">Demo only — no real wagers.</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <span>Made for Pump.fun livestreams — demo only, no real wagers.</span>
+    </footer>
+
+    <script src="https://unpkg.com/@solana/web3.js@1.95.3/lib/index.iife.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+  </html>
+
+
